@@ -57,7 +57,7 @@ jobs:
         uses: dawidd6/action-send-mail@v3.12.0
         with:
           # SMTP server address
-          server_address: us.es
+          server_address: irm@us.es
           subject: "Se ha publicado un nuevo artefacto"
           # Recipients mail addresses (separated with comma)
           to: <irm@us.es>
