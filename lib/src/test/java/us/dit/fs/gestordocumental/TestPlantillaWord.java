@@ -50,6 +50,22 @@ class TestPlantillaWord {
 	        assertEquals(wordDocument.convertTextFileToString("parrafo.txt"), paragraphs.get(2).getText());
 	       
 	    }
+	    
+
+	    /**
+	     * Verifica el tamaño de la letra del título
+	     * @throws Exception
+	     */
+	    @Test
+	    public void titleSize20() throws Exception {
+	        Path msWordPath = Paths.get("Quijote.docx");
+	        logger.info("path ",msWordPath);
+	        XWPFDocument document = new XWPFDocument(Files.newInputStream(msWordPath));
+	        List<XWPFParagraph> paragraphs = document.getParagraphs();
+	        document.close();
+	        assertEquals(20.0, paragraphs.get(0).getRuns().get(0).getFontSizeAsDouble());
+	       
+	    }
 	}
 
 
