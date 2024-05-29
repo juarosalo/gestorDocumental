@@ -51,7 +51,7 @@ jobs:
           echo "Está añadiendo una nueva versión"
           chmod +x gradlew
           ./gradlew publish
-    	- name: Send email
+      - name: Send email
         # You may pin to the exact commit or the version.
         # uses: dawidd6/action-send-mail@2cea9617b09d79a095af21254fbcb7ae95903dde
         uses: dawidd6/action-send-mail@v3.12.0
