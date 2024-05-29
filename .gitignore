@@ -1,0 +1,31 @@
+# Ignore Gradle project-specific cache directory
+.gradle/
+#No quiero subir el fichero de configuración de gradle, porque contiene secretos
+gradle.properties
+#Ignoro los directorios que crea el IDE en el espacio de trabajo, que no se suba a git
+.classpath
+.project
+.lock
+.settings
+
+# Ignorar el fichero de propiedades de gradle, porque tienen datos personales
+gradle.properties
+
+
+# Compiled class file
+*.class
+
+
+# Ignora la carpeta de compilados
+bin
+
+
+# Ignore Gradle build output directory
+build
+
+# Ignore word
+*.docx
+*.docx#
+
+
+
